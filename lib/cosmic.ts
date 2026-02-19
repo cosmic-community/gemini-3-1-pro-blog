@@ -6,6 +6,7 @@ export const cosmic = createBucketClient({
   bucketSlug: process.env.COSMIC_BUCKET_SLUG || 'gemini-31-pro-blog-production',
   readKey: process.env.COSMIC_READ_KEY || 'EsvqYNXcles3URNqKapPQI6O2aeGZRQBF6LQgroD41Wj0kzaX0',
   writeKey: process.env.COSMIC_WRITE_KEY || '',
+  apiEnvironment: "staging"
 });
 
 // Helper to check for 404s
